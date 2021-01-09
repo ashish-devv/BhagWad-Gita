@@ -1,0 +1,62 @@
+.themeorange {
+  background-color: orange;
+}
+.jumbotron {
+  background: url("https://bhagavadgita.io/static/images/sribhagavadgita.jpg")
+    no-repeat center center;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  height: 27em;
+}
+/* .jumbotron:hover {
+} */
+
+.card:hover {
+  box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25),
+    0 20px 20px rgba(245, 102, 6, 0.562);
+}
+
+body {
+  background: linear-gradient(230deg, #ffa500, #d59217, #edd9b4, #ffffff);
+  background-size: 800% 800%;
+
+  -webkit-animation: colorchangeorange 6s ease infinite;
+  -moz-animation: colorchangeorange 6s ease infinite;
+  animation: colorchangeorange 6s ease infinite;
+}
+
+@-webkit-keyframes colorchangeorange {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+@-moz-keyframes colorchangeorange {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+@keyframes colorchangeorange {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
