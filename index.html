@@ -7,7 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&family=Yeon+Sung&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -26,7 +30,10 @@
         class="navbar navbar-expand-lg navbar-dark"
         style="padding-bottom: 1rem"
       >
-        <a class="navbar-brand" href="#" style="font-size: x-large"
+        <a
+          class="navbar-brand"
+          href="#"
+          style="font-size: x-large; font-family: 'Yeon Sung'"
           >📕 BhagwadGita</a
         >
         <button
@@ -61,8 +68,11 @@
           </ul>
         </div>
       </nav>
-      <div class="jumbotron border border-dark text-center">
-        <h1 class="display-4 font-weight-bolder text-white text-center">
+      <div class="jumbotron border border-dark text-center boldcard">
+        <h1
+          class="display-4 font-weight-bolder text-white text-center"
+          style="font-family: 'Yeon Sung'"
+        >
           BHAGAVAD GITA
         </h1>
         <button class="btn btn-warning" style="margin-top: 4rem">
@@ -70,7 +80,7 @@
         </button>
       </div>
     </section>
-    <section class="container text-center">
+    <section class="container">
       <div>
         <h5 class="lead">Go to Verse</h5>
         <form class="form-inline text-center mr-4 ml-4">
@@ -124,15 +134,20 @@
       </div>
       <div class="row mt-3">
         <div class="col-sm-6" ng-repeat="chapt in chaptersdata">
-          <div class="card themeorange border border-dark mt-1">
-            <div class="card-body">
-              <h5 class="card-title">
-                <u>
-                  {{chapt.chapter_number}}. {{chapt.name}} -
-                  {{chapt.meaning.en}}
-                </u>
+          <div class="card themeorange mt-2 boldcard">
+            <div class="card-body text-white">
+              <h5
+                class="card-title font-weight-bolder"
+                style="font-size: x-large"
+              >
+                {{chapt.chapter_number}}. {{chapt.name}}
               </h5>
-              <p class="card-text">{{chapt.summary.hi}}</p>
+              <p
+                class="card-text lead"
+                style="font-size: larger; font-family: 'Yeon Sung'"
+              >
+                👉 {{chapt.meaning.en}}
+              </p>
             </div>
           </div>
         </div>
